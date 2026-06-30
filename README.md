@@ -130,6 +130,19 @@ Seven BI pages are fully specified in
 Capture specs for each page live in [`screenshots/`](screenshots/). Live
 code-generated charts are in [`python/outputs/`](python/outputs/).
 
+**▶ Interactive dashboard (viewable now):** an actual clickable dashboard is
+generated from the data by [`python/build_dashboard.py`](python/build_dashboard.py)
+→ **[`dashboards/legal_case_dashboard.html`](dashboards/legal_case_dashboard.html)**.
+It is a single self-contained HTML file (Plotly.js inlined — works offline, no
+server): KPI tiles, the workup funnel, completion-by-type, the demand forecast,
+case-manager productivity, the bottleneck view, case mix, and status. Build/open
+it with:
+
+```bash
+python python/build_dashboard.py          # writes the HTML
+open dashboards/legal_case_dashboard.html  # macOS (use xdg-open on Linux)
+```
+
 ---
 
 ## 🧮 SQL Highlights
