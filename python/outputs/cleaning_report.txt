@@ -1,0 +1,20 @@
+======================================================================
+DATA CLEANING REPORT - Legal Case Management Intelligence
+======================================================================
+
+Loaded 2,540 client rows and 2,743 case rows.
+
+[1] Duplicate clients detected: 40 (merged into earliest client_id by identity key).
+    Clients after de-dup: 2,500
+
+[2] Negative settlement_amount repaired (abs): 8
+    Negative days_in_stage repaired (abs): 10
+    date_closed < date_opened nulled for review: 6
+
+[3] Missing emails flagged: 76 (3.0%)
+    Missing referral_source imputed to 'Unknown': 50
+
+----------------------------------------------------------------------
+Wrote /Users/rin/Legal-Case-Management-Intelligence/python/../data/processed/clients_clean.csv  (2,500 rows)
+Wrote /Users/rin/Legal-Case-Management-Intelligence/python/../data/processed/cases_clean.csv    (2,743 rows)
+Cleaning complete.

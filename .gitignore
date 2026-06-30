@@ -1,0 +1,25 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Data: keep the generated CSVs out of source control by default.
+# They are fully reproducible via `python python/generate_data.py`.
+# (Comment the next two lines out if you WANT the sample data committed.)
+data/processed/
+# data/*.csv
+
+# Generated analysis artifacts (reproducible via the python/ scripts)
+# Comment out if you want the example figures committed for the README.
+# python/outputs/

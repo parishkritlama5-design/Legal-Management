@@ -1,0 +1,19 @@
+case_manager_id,manager_name,team,hire_date,monthly_capacity
+CM-001,Patricia Gonzalez,Litigation Support,2019-11-01,55
+CM-002,Tyler Lopez,Workup Team B,2018-04-16,35
+CM-003,Kevin Smith,Workup Team B,2017-03-09,50
+CM-004,Elizabeth Young,Workup Team A,2019-04-18,45
+CM-005,David Jones,Workup Team B,2018-02-25,45
+CM-006,Robert Walker,Workup Team B,2018-11-01,45
+CM-007,Kevin Gonzalez,Intake,2020-07-04,45
+CM-008,Elizabeth Taylor,Litigation Support,2022-11-26,40
+CM-009,Brandon Lopez,Workup Team A,2019-11-03,50
+CM-010,Carlos Young,Workup Team B,2020-01-13,45
+CM-011,Barbara Miller,Intake,2022-05-10,35
+CM-012,Sofia Jackson,Intake,2016-04-07,45
+CM-013,Sarah Ramirez,Workup Team A,2021-11-23,40
+CM-014,Diego Sanchez,Workup Team A,2015-10-24,35
+CM-015,Richard Cohen,Litigation Support,2019-05-17,50
+CM-016,Fatima Cohen,Workup Team B,2021-03-02,50
+CM-017,Hassan Hernandez,Intake,2019-09-29,55
+CM-018,Sofia Rodriguez,Workup Team A,2016-12-20,45

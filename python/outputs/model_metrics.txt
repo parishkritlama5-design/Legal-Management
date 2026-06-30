@@ -1,0 +1,48 @@
+======================================================================
+PREDICTIVE MODEL - Will the matter complete workup?
+======================================================================
+
+Samples: 2,743 | Positive rate (completed): 0.608
+Features: 4 numeric + 6 categorical
+Excluded leakage columns: current_stage, case_status, case_outcome, settlement_amount, date_closed, days_to_close, is_open, workup_completed, workup_completed_date, days_in_stage, case_age_days
+Train: 2,057 | Test: 686 (stratified 75/25)
+
+5-fold stratified CV ROC-AUC (train set):
+  Logistic Regression    AUC = 0.700 +/- 0.020
+  Random Forest          AUC = 0.696 +/- 0.014
+
+Logistic Regression
+  Accuracy : 0.687
+  Precision: 0.701
+  Recall   : 0.844
+  ROC-AUC  : 0.696
+  Confusion matrix [ [TN FP] [FN TP] ]: [[119, 150], [65, 352]]
+
+Random Forest
+  Accuracy : 0.644
+  Precision: 0.715
+  Recall   : 0.691
+  ROC-AUC  : 0.686
+  Confusion matrix [ [TN FP] [FN TP] ]: [[154, 115], [129, 288]]
+
+Selected model (by ROC-AUC): Logistic Regression
+
+Top feature importances (Random Forest):
+  missing_documents                      0.1498
+  medical_records_received               0.1365
+  communication_count                    0.0983
+  case_type_Motor Vehicle Accident       0.0688
+  attorney_years_experience              0.0604
+  case_type_Mass Tort - Talcum           0.0251
+  team_Workup Team B                     0.0188
+  team_Workup Team A                     0.0176
+  marketing_channel_Paid Search          0.0173
+  case_type_Mass Tort - Camp Lejeune     0.0170
+  case_type_Mass Tort - Roundup          0.0153
+  referral_source_Google / SEO           0.0149
+  team_Intake                            0.0148
+  marketing_channel_Broadcast            0.0145
+  referral_source_TV Advertising         0.0141
+
+Exported 686 test-set predictions -> /Users/rin/Legal-Case-Management-Intelligence/python/outputs/predictions.csv
+  At-risk matters flagged: 184
