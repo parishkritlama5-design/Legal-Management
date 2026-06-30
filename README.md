@@ -258,24 +258,7 @@ pages per [`dashboards/dashboard_specifications.md`](dashboards/dashboard_specif
 
 ---
 
-## 🎤 Interview Talking Points
 
-- **Business-first framing:** I started from the partners' decisions (pipeline
-  health, capacity, risk) and worked backward to the data model — not the other
-  way around.
-- **End-to-end ownership:** synthetic data → schema → advanced SQL → Python
-  ML/forecasting → BI design → executive recommendations. I can speak to every
-  layer.
-- **I designed for honesty, not vanity metrics.** I excluded outcome-leaking
-  features from the model, held out a back-test for the forecast, and built a
-  whole data-quality layer that catches the dirt I injected. Ask me about
-  leakage — it's the first thing a good reviewer checks.
-- **Actionable, not just descriptive:** the model's top features are all things
-  operations can *change* (missing docs, communication, time-in-stage), and the
-  AT-RISK list is a worklist, not a chart.
-- **Quantified impact:** $30.17M settlement value tracked, a 60.8% completion
-  rate with a clear mass-tort gap, and a 6-month workup-demand forecast at 12.5%
-  MAPE.
 
 Full walkthrough deck: [`presentation/presentation_outline.md`](presentation/presentation_outline.md).
 
